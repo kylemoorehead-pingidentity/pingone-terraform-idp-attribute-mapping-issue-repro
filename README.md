@@ -1,7 +1,12 @@
 # PingOne Terraform External Identity Provider Username Attribute Mapping Issue Reproduction
 P.T.E.I.P.U.A.M.I.R. for short (TAY-poo-ah-meer)
 
-#### Repro steps:
+#### Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Repro Steps](#repro-steps)
+- [Happy Path Repro Steps](#happy-path-repro-steps)
+
+#### Repro Steps:
 Clone this repo.
 
 Update the terraform.tfvars with your environment's information
@@ -64,8 +69,7 @@ pingone_environment.repro_environment: Destruction complete after 2s
 Destroy complete! Resources: 2 destroyed.
 ```
 
-#### Alternative Repro Steps:
-Could be considered the happy path right now. 
+#### Happy Path Repro Steps:
 These steps are what happens if you remove the offending attribute mapping before the initial destroy attempt.
 
 Clone this repo.
