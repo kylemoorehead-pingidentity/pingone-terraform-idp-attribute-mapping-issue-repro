@@ -7,10 +7,12 @@ P.T.E.I.P.U.A.M.I.R. for short (TAY-poo-ah-meer)
 - [Happy Path Repro Steps](#happy-path-repro-steps)
 
 #### Repro Steps:
-Clone this repo.
+
+Clone this repo
 
 Update the terraform.tfvars with your environment's information
 
+Create the resources:
 ```
 terraform apply --auto-approve
 ```
@@ -30,7 +32,7 @@ pingone_identity_provider_attribute.microsoft_upn: Creation complete after 0s [i
 Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 ```
 
-Attempt to destroy the environment.
+Attempt to destroy the environment:
 ```
 terraform destroy --auto-approve
 ```
@@ -48,12 +50,12 @@ pingone_identity_provider_attribute.microsoft_email: Destruction complete after 
 ╵
 ```
 
-Remove the offending `pingone_identity_provider_attribute`
+Remove the offending `pingone_identity_provider_attribute`:
 ```
 terraform state rm pingone_identity_provider_attribute.microsoft_upn
 ```
 
-Attempt to destory it again
+Attempt to destory it again:
 ```
 terraform destroy --auto-approve
 ```
@@ -76,6 +78,7 @@ Clone this repo.
 
 Update the terraform.tfvars with your environment's information
 
+Create the resources:
 ```
 terraform apply --auto-approve
 ```
@@ -95,12 +98,12 @@ pingone_identity_provider_attribute.microsoft_upn: Creation complete after 0s [i
 Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 ```
 
-Remove the offending `pingone_identity_provider_attribute`
+Remove the offending `pingone_identity_provider_attribute`:
 ```
 terraform state rm pingone_identity_provider_attribute.microsoft_upn
 ```
 
-Attempt to destory it again
+Attempt to destory it:
 ```
 terraform destroy --auto-approve
 ```
