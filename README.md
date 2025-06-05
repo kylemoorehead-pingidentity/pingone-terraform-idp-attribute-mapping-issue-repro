@@ -6,7 +6,6 @@ P.T.E.I.P.U.A.M.I.R. for short (TAY-poo-ah-meer)
 - [Repro Steps](#repro-steps)
 - [Happy Path Repro Steps](#happy-path-repro-steps)
 
-#### Issue Description
 
 #### Repro Steps:
 
