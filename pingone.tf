@@ -25,6 +25,18 @@ resource "pingone_identity_provider" "microsoft" {
     client_id     = "client-id"
     client_secret = "client-secret"
   }
+
+  # OIDC does seem to function properly
+    # openid_connect = {
+    #   authorization_endpoint = "https://az-endpoint.com"
+    #   client_id = "client-id"
+    #   client_secret = "client-secret"
+    #   issuer = "https://issuer.com"
+    #   jwks_endpoint = "https://jwks-endpoint.com"
+    #   scopes = [ "openid" ]
+    #   token_endpoint = "https://token-endpoint.com"
+    # }
+
 }
 
 # This one needs to be forcibly removed from the state before deleting
